@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="blueLight">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>หน้าแรก</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+      <img src="../../assets/imgs/download.jpg"/>
+      <ion-card-content>
+        <ion-card-title class="setText" >
+            ระบบการลา
+          </ion-card-title>
+        <p>
+          ให้เจ้าหน้าที่ที่ต้องการลาราชการเลือกเมนูด้านซ้าย ที่แบบฟอร์มการลา
+          จากนั้นให้กรอกข้อความตามที่ระบบกำหนด และส่งไปให้หัวหน้าพิจารณาอนุมัติ
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+  <button ion-button outline block (click)="deDetail()" >รายละเอียดการลา</button>
+</ion-content>

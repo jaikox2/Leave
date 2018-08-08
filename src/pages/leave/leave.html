@@ -1,0 +1,55 @@
+<ion-header>
+
+  <ion-navbar color="blueLight">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>ฟอร์มการลา</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h4><font color='blue'>แบบฟอร์มใบลา</font></h4>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>เรียน</ion-label>
+      <ion-input type='text'></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list radio-group>
+    <ion-list-header color='light'>เรื่อง</ion-list-header>
+    <ion-item>
+      <ion-radio value='sick'></ion-radio>
+      <ion-label>ขอลาป่วย</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-radio value='bussiness'></ion-radio>
+      <ion-label>ขอลากิจ</ion-label> 
+    </ion-item>
+    <ion-item>
+      <ion-radio value='rest'></ion-radio>
+      <ion-label>ขอลาพักผ่อน</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>วันเริ่มลา</ion-label>
+      <ion-input type='text'></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>วันสิ้นสุดการลา</ion-label>
+      <ion-input type='text'></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>เหตุผลการลา</ion-label>
+      <ion-textarea rows='3'></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <button ion-button block (click)="showAlert()">ส่งใบลา</button>
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar color="blueLight">
+    <ion-title>รายละเอียดการลา</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding >
+  <p class="setText" >{{id}}</p>
+  <ion-card>
+      <ion-card-header>
+        การลาป่วย
+      </ion-card-header>
+      <ion-card-content >
+          ถ้าพนักงานคนใดได้รับบาดเจ็บหรือเจ็บป่วย  และไม่สามารถทำงานได้ตามปกติที่บริษัท
+          ให้มีสิทธิลาป่วยได้เท่าที่ป่วยจริง  แต่ไม่เกิน  30  วันทำงาน  โดยได้รับค่าจ้าง
+      </ion-card-content>
+    </ion-card> 
+
+     <ion-card>
+        <ion-card-header>
+          การลากิจ
+        </ion-card-header>
+        <ion-card-content>
+            พนักงานคนใดที่ไม่มีสิทธิหยุดพักผ่อนประจำปี  สามารถขอลากิจส่วนตัวได้  โดยยื่นคำขอในแบบฟอร์มที่กำหนด
+              เพื่อขอลากิจส่วนตัวต่อผู้บังคับบัญชาล่วงหน้า  3  วัน  เพื่อขออนุมัติ  
+        </ion-card-content>
+      </ion-card>
+
+       <ion-card>
+          <ion-card-header>
+            การลาพักร้อน
+          </ion-card-header>
+          <ion-card-content>
+              ลูกจ้างซึ่งทํางานติดต่อกันมาแล้วครบหนึ่งปีมีสิทธิหยุดพักผ่อนประจําปีได้ปีหนึ่งไม่น้อยกว่าหกวันทํางาน
+              โดยให้นายจ้างเป็นผู้กําหนดวันหยุดดังกล่าวให้แก่ลูกจ้างล่วงหน้าหรือกําหนดให้ตามที่นายจ้างและลูกจ้างตกลงกัน 
+          </ion-card-content>
+        </ion-card>
+    <button ion-button outline block (click)="back()" >กลับไปยังหน้าหลัก</button>
+
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar color="blueLight">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h4>กรุณาเข้าระบบ</h4>
+  <ion-list>
+
+      <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+  </ion-list>
+  <button ion-button block (click)="doLogin($event,username,password)">LOGIN</button>
+  <button ion-button block outline (click)="dismiss()" >ยกเลิก</button>
+
+</ion-content>
